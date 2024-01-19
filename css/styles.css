@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #111;
+  --box-size: 0;
+  --box-position-x: 0;
+  --box-position-y: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 500vh;
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: aliceblue;
+}
+
+.scroll-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--box-size);
+  height: 30px;
+  background-color: red;
+}
+
+.title {
+  position: fixed;
+  top: 30px;
+  left: 0;
+}
+
+.button {
+  position: fixed;
+  top: 100px;
+}
+
+.button--rgb {
+  left: 0;
+}
+
+.button--hexa {
+  left: 200px;
+}
+
+.mouse-box {
+  position: fixed;
+  top: var(--box-position-y);
+  left: var(--box-position-x);
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  pointer-events: none;
+}
